@@ -18,7 +18,7 @@ const Grid = (props: Props) => {
               className={className}
               img={img}
               imgClassName={imgClassName}
-              titleClassname={titleClassName}
+              titleClassName={titleClassName}
               spareImg={spareImg}
             />
           )
