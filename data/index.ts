@@ -85,7 +85,7 @@ export const projects = [
     des: "A social Media app built with ReactJs, Chakra UI, Firbase, and other JavaScript libraries such as React-Hook-Form, etc.",
     img: "/p2.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "firebase.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://socialmedia-2a0c7.web.app/login/",
   },
   {
     id: 3,
