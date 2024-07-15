@@ -46,24 +46,34 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const [copied, setCopied] = useState(false);
+  const [downloaded, setDownloaded] = useState(false);
   const leftLists = ["ReactJS", "NextJS", "Typescript"];
   const rightLists = ["TailWindCSS", "ExpressJS", "GOLang"];
 
   const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
+    loop: downloaded,
+    autoplay: downloaded,
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  const handleCopy = () => {
-    const text = "jamilamasa@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+  // const handleCopy = () => {
+  //   const text = "jamilamasa@gmail.com";
+  //   navigator.clipboard.writeText(text);
+  //   setDownloaded(true);
+  // };
+  const handleDownloadResume = () => {
+    const resumeUrl = "/01JamilAmasaResume.pdf";
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "01Jamil_Amasa_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setDownloaded(true);
   };
-
+  
 
   return (
     <div
@@ -153,15 +163,15 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              <div className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
+              <div className={`absolute -bottom-5 right-0 ${downloaded ? "block" : "block"
                   }`}>
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={downloaded ? "Resume Downloaded" : "Download My Resume"}
                 icon={<IoCopyOutline />}
                 position="left"
-                handleClick={handleCopy}
+                handleClick={handleDownloadResume}
                 otherClasses="!bg-[#161A31]"
               />
             </div>
