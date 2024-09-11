@@ -136,15 +136,15 @@ export const testimonials = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer - Ijidola Digital Agency",
-    desc: "pearheaded the redesign of the Finpadi User fintech app, increasing user engagement by 35% through innovative UI/UX enhancements.",
+     title: "Frontend Developer - Konectgate",
+    desc: "Led the development of a financial application’s frontend, focusing on UI design, payment integration, and data visualization while ensuring adherence to confidentiality agreements.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "IT Support technician - CWG PLC",
-    desc: "Resolved over 20 hardware-related issues, ensuring smooth functioning of IT infrastructure.",
+     title: "Frontend Engineer - Ijidola Digital Agency",
+    desc: "Spearheaded the redesign of the Finpadi User fintech app, increasing user engagement by 35% through innovative UI/UX enhancements.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
