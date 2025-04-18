@@ -76,7 +76,7 @@ export const projects = [
     title: "Passwave - Event Ticketing Application",
     des: "Co-developed an event ticketing platform with friends for buying and selling tickets online. Built with React, TypeScript, and GraphQL for a seamless and secure user experience.",
     img: "/p1.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/graphql.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.webp", "/graphql.svg"],
     link: "https://www.passwave.ng/",
   },
   {
@@ -84,7 +84,7 @@ export const projects = [
     title: "Social Media App",
     des: "A social Media app built with ReactJs, Chakra UI, Firbase, and other JavaScript libraries such as React-Hook-Form, etc.",
     img: "/p2.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "firebase.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.webp", "firebase.svg"],
     link: "https://socialmedia-2a0c7.web.app/login/",
   },
   {
@@ -92,7 +92,7 @@ export const projects = [
     title: "GitHub Finder",
     des: "This app makes it easy for you to search and view Github users profile.",
     img: "/p3.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.webp"],
     link: "https://jamils-github-finder.netlify.app/",
   },
   {
@@ -100,7 +100,7 @@ export const projects = [
     title: "QR Code generator",
     des: "We all desire a fast and seamless ways to share links, this application creates a QR code for links",
     img: "/p4.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.webp"],
     link: "https://jamils-qrcode-generator.netlify.app/",
   },
 ];
