@@ -172,7 +172,7 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/twit.webp",
     link: "https://x.com/Amasa_tech",
   },
   {
