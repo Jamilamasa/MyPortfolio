@@ -49,7 +49,7 @@ export const BentoGridItem = ({
 }) => {
   const [downloaded, setDownloaded] = useState(false);
   const leftLists = ["ReactJS", "NextJS", "Typescript"];
-  const rightLists = ["TailWindCSS", "ExpressJS", "GOLang"];
+  const rightLists = ["TailWindCSS", "ExpressJS", "FastAPI"];
 
   const defaultOptions = {
     loop: downloaded,
