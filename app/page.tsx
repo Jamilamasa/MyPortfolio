@@ -10,7 +10,6 @@ const Experience = dynamic(() => import("@/components/Experience"), { ssr: false
 const Approach = dynamic(() => import("@/components/Approach"), { ssr: false });
 const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 
-// For named exports
 const FloatingNav = dynamic(
   () => import("@/components/ui/FloatingNavBar").then((mod) => mod.FloatingNav),
   { ssr: false }
