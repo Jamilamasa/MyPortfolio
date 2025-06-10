@@ -1,10 +1,15 @@
 "use client"
 
 import { projects } from "@/data";
-
-import { PinContainer } from "./ui/3d-pin";
+import dynamic from "next/dynamic";
 import { FaLocationArrow } from "react-icons/fa6";
 import Image from "next/image";
+
+const PinContainer = dynamic(
+  () => import("@/components/ui/3d-pin").then((mod) => mod.PinContainer),
+  { ssr: false }
+);
+
 
 type Props = {};
 

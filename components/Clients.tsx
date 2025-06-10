@@ -3,7 +3,13 @@
 import React from "react";
 
 import { testimonials } from "@/data";
-import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import dynamic from "next/dynamic";
+const InfiniteMovingCards = dynamic(
+  () => import("@/components/ui/InfiniteCards").then((mod) => mod.InfiniteMovingCards),
+  { ssr: false }
+);
+
+
 
 const Clients = () => {
   return (
