@@ -8,7 +8,7 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+import Lottie from "lottie-react";
 
 export const BentoGrid = ({
   className,
@@ -61,19 +61,17 @@ export const BentoGridItem = ({
     },
   };
   const handleDownloadResume = () => {
-  if (typeof window !== 'undefined') {
-    const resumeUrl = "/01JamilAmasaResume.pdf";
-    const link = document.createElement("a");
-    link.href = resumeUrl;
-    link.download = "01Jamil_Amasa_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    setDownloaded(true);
-  }
-};
-
-  
+    if (typeof window !== "undefined") {
+      const resumeUrl = "/01JamilAmasaResume.pdf";
+      const link = document.createElement("a");
+      link.href = resumeUrl;
+      link.download = "01Jamil_Amasa_Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setDownloaded(true);
+    }
+  };
 
   return (
     <div
@@ -91,8 +89,8 @@ export const BentoGridItem = ({
         <div className="w-full h-full absolute">
           {img && (
             <Image
-            width={30}
-            height={30}
+              width={30}
+              height={30}
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover", "object-center")}
@@ -106,8 +104,8 @@ export const BentoGridItem = ({
         >
           {spareImg && (
             <Image
-            width={30}
-            height={30}
+              width={30}
+              height={30}
               src={spareImg}
               alt={spareImg}
               className={"object-cover object-center w-full h-full"}
@@ -116,7 +114,7 @@ export const BentoGridItem = ({
         </div>
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"/>
+            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl" />
           </BackgroundGradientAnimation>
         )}
         <div
@@ -167,9 +165,19 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              <div className={`absolute -bottom-5 right-0 ${downloaded ? "block" : "block"
-                  }`}>
-                <Lottie options={defaultOptions} height={200} width={400} />
+              <div
+                className={`absolute -bottom-5 right-0 ${
+                  downloaded ? "block" : "block"
+                }`}
+              >
+                {animationData && (
+                  <Lottie
+                    animationData={animationData}
+                    loop={downloaded}
+                    autoplay={downloaded}
+                    style={{ height: 200, width: 400 }}
+                  />
+                )}
               </div>
               <MagicButton
                 title={downloaded ? "Resume Downloaded" : "Download My Resume"}
