@@ -75,7 +75,7 @@ export const projects = [
   {
     id: 1,
     title: "BuffetBuddy – AI Meal Recommender",
-    des: "AI-powered buffet recommendation system built for 5-star hotels. Combines FastAPI, OpenAI, and Next.js to deliver personalized, health-conscious meal suggestions. Currently being piloted in a 5-star hotel.",
+    des: "AI-powered buffet recommendation system currently being piloted in a 5-star hotel. Combines FastAPI, OpenAI, and Next.js to deliver personalized, health-conscious meal suggestions.",
     img: "/p5.webp",
     iconLists: ["/re.svg", "/tail.svg", "/ts.webp"],
     link: "https://buffet-wellness-guide.vercel.app/",
