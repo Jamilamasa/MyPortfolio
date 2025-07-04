@@ -49,7 +49,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building projects with Next.js. I'm also expanding my backend skills by learning FastAPI.",
+    title:
+      "Currently building an AI-powered buffet recommender for 5-star hotels using Next.js and FastAPI.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -73,14 +74,23 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Passwave - Event Ticketing Application",
-    des: "Co-developed an event ticketing platform with friends for buying and selling tickets online. Built with React, TypeScript, and GraphQL for a seamless and secure user experience.",
-    img: "/p1.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.webp", "/graphql.svg"],
-    link: "https://www.passwave.ng/",
+    title: "BuffetBuddy – AI Meal Recommender",
+    des: "AI-powered buffet recommendation system built for 5-star hotels. Combines FastAPI, OpenAI, and Next.js to deliver personalized, health-conscious meal suggestions. Currently being piloted in a 5-star hotel.",
+    img: "/p5.webp",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.webp"],
+    link: "https://buffet-wellness-guide.vercel.app/",
   },
   {
     id: 2,
+    title: "Passwave - Event Ticketing Application",
+    des: "Led frontend architecture and co-developed a modern ticketing platform enabling secure, real-time ticket sales and validation. Engineered with React, TypeScript, and GraphQL to ensure scalability, performance, and seamless UX for thousands of users.",
+    img: "/p1.webp",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.webp", "/graphql.svg"],
+    link: "https://www.passwave.ng/",
+  },
+
+  {
+    id: 3,
     title: "Social Media App",
     des: "A social Media app built with ReactJs, Chakra UI, Firbase, and other JavaScript libraries such as React-Hook-Form, etc.",
     img: "/p2.png",
@@ -88,17 +98,9 @@ export const projects = [
     link: "https://socialmedia-2a0c7.web.app/login/",
   },
   {
-    id: 3,
-    title: "GitHub Finder",
-    des: "This app makes it easy for you to search and view Github users profile.",
-    img: "/p3.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.webp"],
-    link: "https://jamils-github-finder.netlify.app/",
-  },
-  {
     id: 4,
-    title: "QR Code generator",
-    des: "We all desire a fast and seamless ways to share links, this application creates a QR code for links",
+    title: "QRGen – Instant QR Code Generator",
+    des: "Designed and built to solve a personal need for quickly sharing links—this tool generates clean, responsive QR codes on the fly. Developed with HTML, TypeScript, and CSS for a fast, intuitive user experience.",
     img: "/p4.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.webp"],
     link: "https://jamils-qrcode-generator.netlify.app/",
@@ -130,20 +132,19 @@ export const testimonials = [
     name: "Kenechukwu Christopher Duru",
     title: "Lead Product Designer at ",
   },
-  
 ];
 
 export const workExperience = [
   {
     id: 1,
-     title: "Frontend Developer - Konectgate",
+    title: "Frontend Developer - Konectgate",
     desc: "Led the development of a financial application’s frontend, focusing on UI design, payment integration, and data visualization while ensuring adherence to confidentiality agreements.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-     title: "Frontend Engineer - Ijidola Digital Agency",
+    title: "Frontend Engineer - Ijidola Digital Agency",
     desc: "Spearheaded the redesign of the Finpadi User fintech app, increasing user engagement by 35% through innovative UI/UX enhancements.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
