@@ -33,15 +33,7 @@ const RecentProjects = ({ items = projects }: Props) => {
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                   <Image src="/bg.png" alt="bg-img" height={330} width={552} />
                 </div>
-                {img && (
-                  <Image
-                    src={img}
-                    alt={title}
-                    className="z-10 absolute bottom-0"
-                    height={356.25}
-                    width={570}
-                  />
-                )}
+                {img && <ProjectImage src={img} title={title} />}
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
@@ -77,5 +69,20 @@ const RecentProjects = ({ items = projects }: Props) => {
     </div>
   );
 };
+
+function ProjectImage({ src, title }: { src: string; title: string }) {
+  const isRemote = src.startsWith("http://") || src.startsWith("https://");
+
+  return (
+    <Image
+      src={src}
+      alt={title}
+      className="z-10 object-cover object-top"
+      fill
+      sizes="(min-width: 640px) 570px, 80vw"
+      unoptimized={isRemote}
+    />
+  );
+}
 
 export default RecentProjects;
