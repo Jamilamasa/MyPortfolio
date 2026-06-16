@@ -4,7 +4,11 @@ import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
 import Image from "next/image";
 
-const Experience = () => {
+type Props = {
+  items?: typeof workExperience;
+};
+
+const Experience = ({ items = workExperience }: Props) => {
   return (
     <div className="py-20 w-full">
       <h1 className="heading">
@@ -12,7 +16,7 @@ const Experience = () => {
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
-        {workExperience.map((card) => (
+        {items.map((card) => (
           <Button
             key={card.id}
             //   random duration will be fun , I think , may be not

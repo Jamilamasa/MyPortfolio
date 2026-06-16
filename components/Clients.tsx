@@ -11,7 +11,11 @@ const InfiniteMovingCards = dynamic(
 
 
 
-const Clients = () => {
+type Props = {
+  items?: typeof testimonials;
+};
+
+const Clients = ({ items = testimonials }: Props) => {
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
@@ -25,7 +29,7 @@ const Clients = () => {
           className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
         >
           <InfiniteMovingCards
-            items={testimonials}
+            items={items}
             direction="left"
             speed="slow"
           />

@@ -3,10 +3,13 @@ import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { FaLocationArrow } from "react-icons/fa6";
+import { heroContent } from "@/data";
 
-type Props = {};
+type Props = {
+  content?: typeof heroContent;
+};
 
-const Hero = (props: Props) => {
+const Hero = ({ content = heroContent }: Props) => {
   return (
     <div className="pb-20 pt-36">
       {/* Spotlight */}
@@ -29,10 +32,10 @@ const Hero = (props: Props) => {
       </div>
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-            <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">Jamil Amasa&apos;s Portfolio</h2>
-            <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Transforming Concepts into Seamless User Experiences"/>
-            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">Hi, I&apos;m Jamil, a Software Engineer.</p>
-            <a href="#projects"><MagicButton title="Show my work" icon={<FaLocationArrow />} position="right"/></a>
+            <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">{content.eyebrow}</h2>
+            <TextGenerateEffect className="text-center text-[40px] md:text-5xl lg:text-6xl" words={content.headline}/>
+            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">{content.intro}</p>
+            <a href="#projects"><MagicButton title={content.cta} icon={<FaLocationArrow />} position="right"/></a>
         </div>
       </div>
     </div>

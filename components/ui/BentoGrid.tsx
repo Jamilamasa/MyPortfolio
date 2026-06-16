@@ -49,8 +49,8 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const [downloaded, setDownloaded] = useState(false);
-  const leftLists = ["ReactJS", "NextJS", "Typescript"];
-  const rightLists = ["TailWindCSS", "ExpressJS", "FastAPI"];
+  const leftLists = ["Go", "Python", "TypeScript"];
+  const rightLists = ["React Native", "Next.js", "FastAPI"];
 
   const defaultOptions = {
     loop: downloaded,

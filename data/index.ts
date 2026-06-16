@@ -5,10 +5,18 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
+export const heroContent = {
+  eyebrow: "Jamil Amasa's Portfolio",
+  headline: "Building full-stack products across fintech, payments, mobile, and AI",
+  intro:
+    "Hi, I'm Jamil, a Full-Stack Software Engineer working across APIs, distributed systems, React, React Native, and LLM-powered products.",
+  cta: "Show my work",
+};
+
 export const gridItems = [
   {
     id: 1,
-    title: "Frontend Software Developer",
+    title: "Full-Stack Software Engineer building fintech, payments, mobile, and AI products",
     description: "I am a",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +26,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I prioritize transparency, fostering open communication",
+    title: "I design reliable APIs, polished interfaces, mobile workflows, and production services with clear ownership",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -38,7 +46,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Strong background in Python, Go, TypeScript, React, Next.js, React Native, REST APIs, Redis, and SQL databases.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -50,7 +58,7 @@ export const gridItems = [
   {
     id: 5,
     title:
-      "Currently building an AI-powered buffet recommender for 5-star hotels using Next.js and FastAPI.",
+      "Currently building ChowCart with a Go backend and three Expo React Native apps, while exploring local LLM workflows with Ollama.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -61,7 +69,7 @@ export const gridItems = [
   {
     id: 6,
     title:
-      "Learn more about my professional experience, skills, and education.",
+      "Download my resume for a deeper look at my full-stack, backend, mobile, and product engineering work.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -74,6 +82,14 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "ChowCart - Campus Food Delivery Platform",
+    des: "Founder and lead engineer for a campus food-delivery platform. Built a Go/Chi backend with PostgreSQL, sqlc, Redis, JWT auth, OAuth, OTP verification, wallet ledger, SSE tracking, WebSocket chat, and three Expo React Native apps.",
+    img: "",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.webp"],
+    link: "https://chowcart.ng",
+  },
+  {
+    id: 2,
     title: "BuffetBuddy – AI Meal Recommender",
     des: "AI-powered buffet recommendation system currently being piloted in a 5-star hotel. Combines FastAPI, OpenAI, and Next.js to deliver personalized, health-conscious meal suggestions.",
     img: "/p5.webp",
@@ -81,7 +97,7 @@ export const projects = [
     link: "https://buffet-wellness-guide.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Passwave - Event Ticketing Application",
     des: "Led frontend architecture and co-developed a modern ticketing platform enabling secure, real-time ticket sales and validation. Engineered with React, TypeScript, and GraphQL to ensure scalability, performance, and seamless UX for thousands of users.",
     img: "/p1.webp",
@@ -89,14 +105,6 @@ export const projects = [
     link: "https://www.passwave.ng/",
   },
 
-  {
-    id: 3,
-    title: "Social Media App",
-    des: "A social Media app built with ReactJs, Chakra UI, Firbase, and other JavaScript libraries such as React-Hook-Form, etc.",
-    img: "/p2.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.webp", "firebase.svg"],
-    link: "https://socialmedia-2a0c7.web.app/login/",
-  },
   {
     id: 4,
     title: "QRGen – Instant QR Code Generator",
@@ -137,29 +145,29 @@ export const testimonials = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Developer - Konectgate",
-    desc: "Led the development of a financial application’s frontend, focusing on UI design, payment integration, and data visualization while ensuring adherence to confidentiality agreements.",
+    title: "Software Engineer - Cray Finance (Ramp Technology)",
+    desc: "Designed, deployed, and monitored production payment services across fraud screening, AI document analysis, transaction analytics, automated reconciliation, virtual-account issuing, APIs, and internal tooling with Python, FastAPI, Go, Redis, SQL, AWS S3, and Datadog.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Frontend Engineer - Ijidola Digital Agency",
-    desc: "Spearheaded the redesign of the Finpadi User fintech app, increasing user engagement by 35% through innovative UI/UX enhancements.",
+    title: "Software Engineer - IMBIL Telecom Solutions",
+    desc: "Built near real-time operational analytics APIs and React/Next.js dashboards, then migrated reporting from scheduled jobs toward event-driven workflows and queue-based notification delivery.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Microsofft Power Apps Developer - CWG PLC",
-    desc: "Developed 3+ in-house solutions including an attendance application, service desk application and an e- commerce application using Microsoft Power Apps and Sharepoint, reducing the company expenses by 15%.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Software Engineer - FinPadi",
+    desc: "Built and maintained React-based fintech interfaces, refactored frontend architecture, improved application performance by 30%, and delivered reusable accessible component systems.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Frontend Developer - Passwave Ng",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Founder & Lead Engineer - ChowCart",
+    desc: "Leading product and engineering across a Go backend and student, vendor, and rider Expo apps, covering authentication, order lifecycle, wallet ledger, real-time tracking, chat, notifications, deployment, and customer experience.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -182,3 +190,15 @@ export const socialMedia = [
     link: "https://www.linkedin.com/in/jamil-amasa",
   },
 ];
+
+export const portfolioContent = {
+  navItems,
+  heroContent,
+  gridItems,
+  projects,
+  testimonials,
+  workExperience,
+  socialMedia,
+};
+
+export type PortfolioContent = typeof portfolioContent;

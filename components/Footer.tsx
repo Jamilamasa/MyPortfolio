@@ -4,7 +4,11 @@ import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 import Image from "next/image";
 
-const Footer = () => {
+type Props = {
+  items?: typeof socialMedia;
+};
+
+const Footer = ({ items = socialMedia }: Props) => {
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       <div className="flex flex-col items-center">
@@ -30,7 +34,7 @@ const Footer = () => {
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
+          {items.map((info) => (
             <a
             href={info.link}
             target="_blank"
